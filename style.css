@@ -1,0 +1,361 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #fafafa;   /* off-white background */
+  color: #222;
+  line-height: 1.6;
+}
+
+/* Header */
+.site-header {
+  background: #FEF8F0;
+  border-bottom: 5px solid #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  height: 140px;
+}
+.logo h1 {
+  font-size: 26px;
+}
+.logo p {
+  font-size: 14px;
+  font-style: italic;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+}
+nav ul li {
+  margin-left: 20px;
+}
+nav ul li a {
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 14px;
+  border: 2px solid transparent;
+  border-radius: 20px;
+  transition: 0.2s;
+}
+nav ul li a:hover,
+nav ul li a.active {
+  border: 2px solid #000;   /* sketchy outline */
+  background: #f9f9f9;
+}
+
+/* Hero */
+.hero {
+  background-image: url("background1.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  border-bottom: 5px solid #000;
+  text-align: center;
+  padding: 100px 20px; 
+  
+}
+.hero h1 {
+  font-family: "Lilita One", sans-serif;
+  font-weight: 400;
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #FEF8F0 ;
+  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+.hero p {
+  font-family: "Lilita One", sans-serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: #FEF8F0 ;
+  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+
+}
+.btn-primary {
+    padding: 10px 18px;
+	border-radius: 40px;
+  border: 3px solid #008282;                                   
+  font-weight: bold;
+  font-size: 14px;
+  color: #000;                           
+  background: #fff  
+  );
+  background-size: 200% 200%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 3px 3px 0 #008282;            
+}
+.btn-primary:hover {
+  transform: scale(1.05) rotate(-1deg);  
+  box-shadow: 5px 5px 0 #000;
+}
+.btn-primary2 {
+    padding: 10px 18px;
+	border-radius: 40px;
+  border: 3px solid #008282;                                   
+  font-weight: bold;
+  
+  font-size: 14px;
+  color: black;                           
+  background: #fff ;
+  background-size: 200% 200%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 3px 3px 0 #008282;            
+}
+.btn-primary2:hover {
+  transform: scale(1.05) rotate(-1deg);  
+  box-shadow: 5px 5px 0 #000;
+}
+
+
+/* Steps / How it Works */
+.how-it-works {
+  padding: 80px 20px;
+  text-align: center;
+}
+.how-it-works h2 {
+  margin-bottom: 40px;
+}
+.steps {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.step-card {
+  font-family: "Lilita One", sans-serif;
+  font-weight: 400;
+  background: #fff;
+  border: 5px dotted #000;
+  border-radius: 20px;
+  padding: 20px;
+  flex: 1 1 220px;
+  transition: transform 0.2s;
+}
+.step-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Products / Impact / Services */
+.products {
+  padding: 80px 20px;
+  text-align: center;
+}
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+}
+.product-card {
+  background: #fff;
+  border: 2px solid #000;
+  border-radius: 20px;
+  padding: 20px;
+  transition: transform 0.2s;
+}
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+/* About */
+.about {
+  padding: 80px 20px;
+  text-align: center;
+}
+.about h2 {
+  margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+  padding: 40px 20px;
+  background: #FEF8F0;
+  border-top: 2px solid #000;
+  color: #000;
+  text-align: center;
+}
+footer nav a {
+  margin: 0 10px;
+  color: #000;
+  font-weight: bold;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+}
+footer nav a:hover {
+  border-bottom: 2px solid #000;
+}
+
+/* Smooth Scroll */
+html {
+  scroll-behavior: smooth;
+}
+/* Timeline Section */
+.timeline-section {
+  padding: 80px 20px;
+  text-align: center;
+  border-bottom: 5px solid #000;
+  background-image: url("background2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+
+.timeline-section h2 {
+  margin-bottom: 50px;
+  font-family: "Lilita One", sans-serif;
+  font-weight: 400;
+  font-size:3rem;
+}
+
+/* Timeline container */
+.timeline {
+  position: relative;
+  max-width: 700px;
+  margin: auto;
+  padding: 20px 0;
+}
+
+/* Vertical line */
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  width: 4px;
+  height: 100%;
+  background: #000;
+}
+
+/* Each timeline item */
+.timeline-item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 40px 0;
+  position: relative;
+}
+
+/* Alternate left and right */
+.timeline-item:nth-child(even) {
+  flex-direction: row-reverse;
+  text-align: right;
+}
+
+/* Dot */
+.timeline-dot {
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  border: 3px solid #000;
+  border-radius: 50%;
+  position: relative;
+  z-index: 1;
+  margin: 0 20px;
+}
+
+/* Content box */
+.timeline-content {
+  background: #fff;
+  border: 2px solid #000;
+  border-radius: 15px;
+  padding: 20px;
+  width: 45%;
+  box-shadow: 3px 3px 0 #000;
+  transition: transform 0.3s;
+}
+
+.timeline-content:hover {
+  transform: translateY(-5px);
+}
+/* Impact Section */
+.impact {
+  padding: 80px 20px;
+  text-align: center;
+  background: #fafafa;
+}
+
+.impact h2 {
+  font-size: 2rem;
+  margin-bottom: 50px;
+  font-family: "Lilita One", sans-serif;
+  font-weight: 400;
+  font-size:3rem;
+}
+
+/* Impact grid */
+.impact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+/* Impact cards */
+.impact-card {
+  background: #fff;
+  border: 3px solid #000;
+  border-radius: 20px;
+  padding: 30px 20px;
+  box-shadow: 4px 4px 0 #000;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.impact-card:hover {
+  transform: translateY(-8px) rotate(-1deg);
+  box-shadow: 6px 6px 0 #000;
+}
+
+/* Emoji icon */
+.impact-icon {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+/* About Page Image Boxes */
+.about-images {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.about-images h2 {
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+.image-box {
+  background-color: #f9f9f9; /* light off-white box */
+  border: 2px dashed #000;  /* sketchy black style */
+  padding: 10px;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+.image-box img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.image-box p {
+  margin-top: 8px;
+  font-weight: bold;
+}
+
+.image-box:hover {
+  transform: scale(1.05);
+}
+
