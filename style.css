@@ -52,7 +52,7 @@ nav ul li a.active {
 
 /* Hero */
 .hero {
-  background-image: url("img.jpeg");
+  background-image: url("background1.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -400,6 +400,7 @@ html {
   border-radius: 10px;
   display: block;
 }
+
 
 
 
