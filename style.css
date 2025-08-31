@@ -358,4 +358,9 @@ html {
 .image-box:hover {
   transform: scale(1.05);
 }
+.text{
+  font-family: "Lilita One", sans-serif;
+  font-weight: 400;
+  font-size: 3rem;
+}
 
